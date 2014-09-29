@@ -4,32 +4,48 @@
 	<title>What time is it?</title>
 	
 	<script = "text/js">
-		$(document).ready(function(){
-			function getClock(){
-				var currentTime = new Date();
-				var seconds currentTime.getSeconds();
-				var minutes currentTime.getMinutes();
-				var hours currentTime.getHours();
-				
-				var clockDiv = document.getElementById("clock");
-				clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
-			}	
-		
-		getClock();
-		});
+		//$(document).ready( function() {
+
+		  function getClock() {
+			var currentTime = new Date();
+			var hours = currentTime.getHours();
+			var minutes = currentTime.getMinutes();
+			var seconds = currentTime.getSeconds();
+
+			// This gets a "handle" to the clock div in our HTML
+			var clockDiv = document.getElementById('clock');
+
+			// Then we set the text inside the clock div 
+			// to the hours, minutes, and seconds of the current time
+			clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+   		  }
+
+		  // This runs the displayTime function the first time
+		  //getClock();
+
+	//});
 	
 	</script>
-	<style = "text/css">
-		#clock{
-			height:3em;
-			top 0; bottom 0; right 0; left 0;
-			width: 3em;
+	<style>
+		body {
+			background-color: #80d4ea;		
+		}
+		#clock {
+			height: 100px;
+			width: 800px;
+			color:white;
+			position: absolute;
+			font-size:15em;
+			margin:auto;
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			text-align:center;
 		}
 	</style>
 </head>
 
-<body onload="getClock()">
-	<div id = "clock"></div>
+<body onload = "getClock();">
+	<div id ="clock"></div>
 
 </body>
 
