@@ -4,21 +4,31 @@
 	<title>What time is it?</title>
 	
 	<script = "text/js">
-		function getClock(){
-			var currentTime = new Date();
-			var seconds currentTime.getSeconds();
-			var minutes currentTime.getMinutes();
-			var hours currentTime.getHours();
-			
-			var clockDiv = document.getElementById("clock");
-			clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+		$(document).ready(function(){
+			function getClock(){
+				var currentTime = new Date();
+				var seconds currentTime.getSeconds();
+				var minutes currentTime.getMinutes();
+				var hours currentTime.getHours();
+				
+				var clockDiv = document.getElementById("clock");
+				clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+			}	
 		
-		}
+		getClock();
+		});
 	
 	</script>
+	<style = "text/css">
+		#clock{
+			height:3em;
+			top 0; bottom 0; right 0; left 0;
+			width: 3em;
+		}
+	</style>
 </head>
 
-<body>
+<body onload="getClock()">
 	<div id = "clock"></div>
 
 </body>
