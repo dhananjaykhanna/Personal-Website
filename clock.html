@@ -1,0 +1,26 @@
+<!doctype html>
+
+<head>
+	<title>What time is it?</title>
+	
+	<script = "text/js">
+		function getClock(){
+			var currentTime = new Date();
+			var seconds currentTime.getSeconds();
+			var minutes currentTime.getMinutes();
+			var hours currentTime.getHours();
+			
+			var clockDiv = document.getElementById("clock");
+			clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
+		
+		}
+	
+	</script>
+</head>
+
+<body>
+	<div id = "clock"></div>
+
+</body>
+
+</html>
