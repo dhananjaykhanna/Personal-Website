@@ -15,6 +15,7 @@
         var hours = currentTime.getHours();
         var minutes = currentTime.getMinutes();
         var seconds = currentTime.getSeconds();
+		var milliseconds = currentTime.getMilliseconds();
     
     
         // Let's set the AM and PM meridiem and 
@@ -45,17 +46,21 @@
         if(seconds < 10) {
             seconds = "0" + seconds;
         }
+		
+		if(milliseconds < 1000){
+			milliseconds = Math.floor(milliseconds/100);
+		}
 	
 		var clockDiv = document.getElementById('clock');
 
         // Then we set the text inside the clock div 
         // to the hours, minutes, and seconds of the current time
-        clockDiv.innerText = hours + ":" + minutes + ":" + seconds + " " + meridiem;
+        clockDiv.innerText = hours + ":" + minutes + ":" + seconds + ":" + milliseconds + " " + meridiem;
     }
     
     // This makes our clock 'tick' by repeatedly
     // running the displayTime function every second.
-    setInterval(displayTime, 1000);
+    setInterval(displayTime, 100);
 
 
 	
@@ -70,7 +75,7 @@
 			width: 800px;
 			color:white;
 			position: absolute;
-			font-size:15em;
+			font-size:10em;
 			margin:auto;
 			position: absolute;
 			top: 0; left: 0; bottom: 0; right: 0;
