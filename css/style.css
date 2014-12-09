@@ -4,6 +4,32 @@
     margin:0;
     padding:0;
 }
+
+#nav{
+
+	list-style: none;
+	background-color:black;
+	padding:1em 1em 1em 70em;
+	
+}
+
+#nav ul li{
+	display:inline;
+	color:white;
+	padding:1em;
+}
+
+#nav ul li a{
+	color:white;
+}
+
+#nav ul a:link{
+	text-decoration:none;
+}
+
+#nav ul li:hover {
+	background-color:#D91E18;
+}
 body{
     
     font-family: 'Josefin Sans', sans-serif;
