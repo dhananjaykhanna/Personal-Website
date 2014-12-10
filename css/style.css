@@ -1,25 +1,30 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:600);
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
 
 *{
     margin:0;
     padding:0;
 }
 
+#wrapper{
+
+}
 #nav{
 
 	list-style: none;
 	background-color:black;
-	padding:1em 1em 1em 70em;
-	
+	padding:1em 1em 1em 1em;
 }
 
-#nav ul li{
+#nav ul a li{
 	display:inline;
 	color:white;
 	padding:1em;
 }
 
-#nav ul li a{
+#nav ul a li{
 	color:white;
 }
 
@@ -30,9 +35,23 @@
 #nav ul li:hover {
 	background-color:#D91E18;
 }
+
+#header-main {
+	background-image: url("../snowym.jpg");	
+	background-attachment:scroll;
+	background-position:center center;
+	background-repeat:none;
+	-webkit-background-size:cover;
+	background-size: cover;
+	padding:20em 0 20em 0;
+	text-align:center;
+	color:white;
+}
+
+
+
 body{
-    
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Roboto-Light;
    
 }
 
