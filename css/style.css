@@ -7,10 +7,12 @@
     margin:0;
     padding:0;
 }
+/* Navigation and header*/
 
-@font-face {
-	font-family: Roboto;
-	src: url(fonts/Roboto-Regular.ttf);
+body{
+    font-family: 'Quicksand';
+    font-weight: 700;
+   
 }
 
 #nav{
@@ -52,26 +54,49 @@
 }
 
 #header-main h1{
-
 	margin: 0px auto;
 	width:45%;
 	font-size:4em;
-
+	border-bottom:white solid 1px;
 }
 
 #header-main p{
 	margin: 0px auto;
 	width:45%;
 	font-size:2em;
-	border-bottom:white solid 1px;
 	font-family:'Quicksand';
 	font-weight:400;
 	padding:0 0 2em 0;
 }
 
-body{
-    font-family: 'Quicksand';
-    font-weight: 700;
-   
+/*Navigation and header stop*/
+
+/*About me start*/
+#about{
+	background-color:yellow;
+	padding: 0 0 10% 0;
 }
+#about-main h1{
+	text-align:center;
+	margin: 5% 0 0 0;
+}
+
+#about-main img{
+	height:10em;
+	width:12em;
+	border: 1px solid;
+	border-radius: 100%;	
+	margin: 0px auto;
+	position:absolute;
+	left:28%;
+	margin-top:5%;
+}
+.desc{
+	position:absolute;
+	left:43%;
+	margin-top:5%;
+	width:40%;
+	line-height:200%;
+}
+
 
