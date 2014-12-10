@@ -73,12 +73,17 @@ body{
 
 /*About me start*/
 #about{
-	background-color:yellow;
 	padding: 0 0 10% 0;
+
+
+	
 }
+
+
 #about-main h1{
 	text-align:center;
 	margin: 5% 0 0 0;
+
 }
 
 #about-main img{
@@ -88,14 +93,14 @@ body{
 	border-radius: 100%;	
 	margin: 0px auto;
 	position:absolute;
-	left:28%;
+	margin-left:28%;
 	margin-top:5%;
 }
 .desc{
+	margin-left:43%;
 	position:absolute;
-	left:43%;
-	margin-top:5%;
 	width:40%;
+	margin-top:4%;
 	line-height:200%;
 }
 
