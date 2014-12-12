@@ -12,6 +12,7 @@
 body{
     font-family: 'Quicksand';
     font-weight: 700;
+    background-color:yellow;
    
 }
 
@@ -74,6 +75,7 @@ body{
 /*About me start*/
 #about{
 	padding: 0 0 10% 0;
+	border-bottom:3px solid black;
 
 
 	
@@ -97,11 +99,22 @@ body{
 	margin-top:5%;
 }
 .desc{
-	margin-left:43%;
+	margin-left:45%;
 	position:absolute;
 	width:40%;
 	margin-top:4%;
 	line-height:200%;
+}
+
+/*beginning of experience*/
+.eBox1{
+	display:inline-block;
+	padding: 2em 2em 2em 2em;
+}
+.eBox{
+	height:10em;
+	width:10em;
+	background-color:#e87e04;
 }
 
 
