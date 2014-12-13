@@ -75,16 +75,13 @@ body{
 /*About me start*/
 #about{
 	padding: 0 0 10% 0;
-	border-bottom:3px solid black;
-
-
-	
+	border-bottom:3px solid black;	
 }
 
 
 #about-main h1{
-	text-align:center;
-	margin: 5% 0 0 0;
+text-align:center;
+	
 
 }
 
@@ -95,26 +92,42 @@ body{
 	border-radius: 100%;	
 	margin: 0px auto;
 	position:absolute;
-	margin-left:28%;
-	margin-top:5%;
+	margin-left:25%;
+	margin-top:5em;
 }
 .desc{
-	margin-left:45%;
+	margin-left:45em;
 	position:absolute;
 	width:40%;
 	margin-top:4%;
 	line-height:200%;
 }
+/*END OF ABOUT ME*/
 
-/*beginning of experience*/
+/*BEGINNING OF EXPERIENCE*/
+#experience{
+	background-color:white;
+}
+#experience-main{
+	padding:20em 0 0 0em;
+	background-color:blue;
+}
+
+#experience-main h2{
+	
+	text-align:center;
+
+}
 .eBox1{
 	display:inline-block;
-	padding: 2em 2em 2em 2em;
+	margin-top:5em;
 }
+
 .eBox{
 	height:10em;
 	width:10em;
 	background-color:#e87e04;
+	margin-left:10em;
 }
 
 
